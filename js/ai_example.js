@@ -26,6 +26,9 @@ function Ai() {
 
         // sample AI:
         if (this.foo == null) this.foo = 0;
-        return this.foo++ % 4;
+        if (this.foo % 100 == 0) return 3;
+        if (this.foo % 101 == 0) return 1;
+        this.foo++ % 3;
+        
     }
 }
